@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+/*Con el * estoy diciendo que los cambios que haga en esta seccion, seran para 
+todos los elementos de mi html */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /*Pinta todo el fondo del contenedor body, de negro*/
+    background-color: #000000;
+
+    /*Mnatengo el color del texto en blanco*/
+    color: white;
+
+    /*height: 100vh lo que hace es que body ocupara el
+    100% o todo el tamaño de la pagina de manera vertical*/
+    height: 100vh;
+
+    /*Lo que hace "box-sizing: border-box;" es que todos los 
+    elementos que estan dentro de body no se van a derbordar de body*/
+    box-sizing: border-box;
+
+}
+
+/*Siempre que modifico un elemnto html por medio de class en CSS
+tego que poner un " . " antes del nombre de la etiqueta class*/
+.texto_destacado {
+    color: blue;
+}
+
+.presentacion {
+
+    /*display: flex convierete mi elemento .presentacion de html en un contenedor flexbos
+    lo que me permitira trabajar con el diseño de los elementos que esten dentro de 
+    .presentacion (los hijos de main) */
+    display: flex;
+
+    /*align-items: center centra todos los elementos del contenedor padre*/
+    align-items: center;
+
+    /*El primer valor es VERTICAL y el segundo valor es HORIZONTAL*/
+    margin: 10% 15%;
+    justify-content: space-between;
+}
+
+.texto_presentacion {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+
+    /* se utiliza para especificar el tamaño de los espacios (o "huecos") 
+    entre filas y columnas en diseños de cuadrícula (grid), flexbox */
+    gap: 40px;
+}
+
+.titulo_presentacion {
+    /*font-size es el tamaño de la fuente*/
+    font-size: 50px;
+
+    font-family: "Roboto Slab", serif;
+}
+
+.parrafo_uno_presentacion {
+    /*font-size es el tamaño de la fuenta*/
+    font-size: 20px;
+
+    font-family: "Roboto Slab", serif;
+}
+
+.imagen_presentacion {
+    /*width da el ancho de la imahen*/
+    width: 400px;
+
+    /**/
+    height: 400px;
+}
+
+.botones {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.enlace_social {
+
+    width: 280px;
+
+    /*El color del boton sera azul*/
+    background-color: #1fd02e;
+
+    /*text-align: center es para centrar el texto en el boton*/
+    text-align: center;
+
+    /*el primer valor es el VERTICAL, el segundo valor el HORIZONTAL*/
+    padding: 21.5px 0;
+
+    /*Con border-radius digo que tan curvo quiero que sean mis botones*/
+    border-radius: 15px;
+
+    /*Aqui solo estoy dando estilo al texto de los botones*/
+    font-family: "Figtree", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+
+    /*Quita las decoraciones del texto, el subrayado que se pone por defecto en este caso*/
+    text-decoration: none;
+
+    color:#000000;
+
+}
