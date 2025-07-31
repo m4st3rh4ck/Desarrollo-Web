@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+/*Con el * estoy diciendo que los cambios que haga en esta seccion, seran para
+todos los elementos de mi html */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* Apply border-box globally for easier layout control */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #442b72;
+    min-height: 100vh;
+    /* Use min-height to allow content to extend beyond viewport height */
+    color: white;
+}
+
+.header {
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-size: 1.5rem; /* 24px / 16 = 1.5rem */ /* This is an invalid unit for font-weight, keeping as is as per request */
+    background-color: #1fd02e;
+    color: #442b72;
+    padding: 2% 0% 0% 7%;
+    padding-bottom: 2%;
+    /* justify-content: center;  This might not be needed here, depends on desired header nav alignment */
+}
+
+.titulo {
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-size: 1.5rem; /* 24px / 16 = 1.5rem */
+    font-weight: 500; /* This is an invalid unit for font-weight, keeping as is as per request */
+    background-color: #1fd02e;
+    color: #442b72;
+    padding: 2% 0% 0% 7%;
+    padding-bottom: 2%;
+}
+
+.header_nav {
+    display: flex;
+    gap: 80px;
+    /* You might want to center the nav items within the header if that's the intention */
+    /* justify-content: center; */
+}
+
+.header_link {
+    text-decoration: none;
+    color: #442b72;
+    /* Ensure link color is visible */
+    font-size: 1.2rem;
+    /* Example: make links a bit larger */
+}
+
+/* New styles for the main content area */
+.main_content {
+    flex-grow: 1;
+    /* Allows main content to take up available space */
+    padding: 20px 15%;
+    /* Adjust padding as needed */
+}
+
+.main_content h1,
+.main_content h2 {
+    text-align: center;
+    /* Center your main titles */
+    margin-bottom: 30px;
+    /* Add some space below titles */
+    margin-top: 40px;
+    padding-bottom: 20px;
+
+}
+
+
+.content_section {
+    display: flex;
+    align-items: center;
+    /* Vertically align items in the section */
+    gap: 50px;
+    /* Space between image and text */
+    margin-bottom: 10px;
+    /* Space between content sections */
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
+    justify-content: center;
+    /* Center items when they wrap */
+}
+
+.content_section.reverse_order {
+    flex-direction: row-reverse;
+    /* Reverse the order for text | image layout */
+}
+
+.content_image {
+    width: 100%;
+     /* Make image responsive */
+    max-width: 600px;
+    /* Set a max-width for larger screens */
+    height: 50%;
+    border-radius: 1%;
+    object-fit: cover;
+    /* Remove float: left; as flexbox will handle positioning */
+}
+
+.content_text {
+    flex: 1;
+    /* Allow text to take up remaining space */
+    min-width: 300px;
+    /* Ensure text doesn't get too narrow */
+}
+
+.content_text p {
+    margin-bottom: 15px;
+    /* Add space between paragraphs */
+    line-height: 1.6;
+    /* Improve readability */
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Center footer text */
+    background-color: #1fd02e;
+    color: #442b72;
+    padding: 24px;
+    margin-top: auto;
+    /* Pushes the footer to the bottom */
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-size: 1.5rem; /* 24px / 16 = 1.5rem */
+    font-weight: 500; /* This is an invalid unit for font-weight, keeping as is as per request */
+
+}
+
+.eva6 {
+    height: 90%;
+    width: 45%;
+    height: auto;
+    border-radius: 1%;
+    object-fit: cover;
+}
+
+@media (max-width:1159px){
+
+    .header{
+        padding: 5%;
+    }
+    .header_nav{
+        justify-content: center;
+    }
+    .main_content{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 5%;
+    }
+    .body{
+        flex-direction: column;
+    }
+    .titulo_presentacion{
+        text-align:center;
+    }
+
+    .texto_presentacion{
+        width: auto;
+        justify-content: center;
+    }
+}
