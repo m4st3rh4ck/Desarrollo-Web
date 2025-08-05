@@ -1,0 +1,21 @@
+#div{
+    background-image: url('images/hero');
+}
+
+#imagen1 {
+    width: 1210px;
+}
+
+#imagen2{
+    width: 50px;
+   margin-right: -500px;
+
+}
+
+#h1 {
+    color: peru;
+}
+
+#p {
+    color: darkslategrey;
+}

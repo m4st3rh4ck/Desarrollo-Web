@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <!-- name: Este atributo especifica el nombre del formulario. -->
+    <!-- 
+    method: Este atributo determina el método a utilizar para enviar la información al servidor. 
+        + GET: se usa para enviar una cantidad limitada de información de forma pública 
+        (los datos son incluidos en la URL, la cual no puede contener más de 255 caracteres). 
+        + POST: se utiliza para enviar una cantidad ilimitada de información de forma privada 
+        (los datos no son visibles al usuario y pueden tener la longitud que necesitemos). 
+    -->
+    <!-- 
+    action: Este atributo declara la URL del archivo en el servidor que va a procesar la
+            información enviada por el formulario. 
+    -->
+    <!-- 
+    target: Este atributo determina dónde se mostrará la respuesta recibida desde el servidor. 
+        + _blank: nueva ventana
+        + _parent: recuadro padre
+        + _top: la ventana que contiene el recuadro
+        + _self: mismo recuadro. Se declara por defecto, lo que significa que la respuesta 
+                recibida desde el servidor se mostrará en la misma ventana. 
+    -->
+    <!-- 
+    enctype: Este atributo declara la codificación aplicada a los datos que envía el formulario. 
+        + application/x-www-form-urlencoded: los caracteres son codificados
+        + multipart/form-data: los caracteres no son codificados
+        + text/plain: solo los espacios son codificados 
+    -->
+    <!-- autocomplete: Auto completado del formulario
+        + on: Auto completado encendido
+        + off: Auto completado apagado
+    -->
+    <form name="formulario" action="" method="post" autocomplete="on">
+        
+        <h3>Entradas de texto</h3>
+        <!-- <label> — Este elemento crea una etiqueta para identificar un elemento de formulario. -->
+        <!-- for: atributo enlace entre la etiqueta label e input, debe ser igual al id de input-->
+        <label for="Texto">Texto</label>
+
+        <!-- 
+        <input> — Este elemento crea un campo de entrada. 
+                Puede recibir diferentes tipos de entradas, dependiendo del valor del atributo type. 
+        -->
+
+        <!--text — Este valor genera un campo de entrada para insertar texto genérico.-->
+        <!--name - Especifica el nombre del elemento de entrada-->
+        <input type="text" name="Texto" id="Texto">
+        <br>
+        <br>
+        <label for="nombre">Nombre</label>
+        <!--value — Especifica un valor inicial para un campo de entrada-->
+        <input type="text" name="nombre" id="nombre" value="Pilares">
+        <br>
+        <br>
+        <label for="apellido">Apellido</label>
+        <!--
+        size — Especifica el ancho visible, en caracteres, de un campo de entrada.
+        El valor predeterminado para el tamaño es 20.
+        Nota: El atributo de tamaño funciona con los siguientes tipos de entrada: 
+            + text
+            + search
+            + tel
+            + url
+            + email
+            + password
+        -->
+        <input type="text" name="apellido" id="apellido" size="30">
+        <br>
+        <br>
+        <label for="curp">CURP</label>
+        <!--
+        maxlength — Este atributo especifica el máximo número de caracteres que se permite
+                    introducir en el campo.
+        -->
+        <!--
+        minlength — Este atributo especifica el mínimo número de caracteres que se permite
+                    introducir en el campo.
+        -->
+        <input type="text" name="curp" id="curp" maxlength="18" minlength="18">
+        <br>
+        <br>
+
+        <h3>Entradas de números</h3>
+
+        <label for="Numero">Número</label>
+        <!--number — Este valor genera un campo de entrada para insertar números.-->
+        <input type="number" name="Numero" id="Numero">
+        <br>
+        <br>
+
+        <h3>Entrada teléfono</h3>
+        <label for="tel">Teléfono</label>
+        <!--tel — Este valor genera un campo de entrada para insertar números de teléfono.-->
+        <input type="tel" name="tel" id="tel">
+        <br>
+        <br>
+
+        <h3>Entrada de correo y contraseña</h3>
+        <label for="email">Correo electrónico</label>
+        <!--email — Este valor genera un campo de entrada para insertar cuentas de correo.-->
+        <input type="email" name="email" id="email">
+        <br>
+        <br>
+        <label for="pass">Contraseña</label>
+        <!--
+        password —  Este valor genera un campo de entrada para insertar una clave. 
+                    Reemplaza los caracteres insertados con estrellas o puntos para ocultar información sensible.
+        -->
+        <input type="password" name="pass" id="pass">
+        <br>
+        <br>
+
+        <h3>Entradas de tiempo</h3>
+        <label for="fecha">Fecha</label>
+        <!--date — Este valor genera un campo de entrada para insertar una fecha.-->
+        <input type="date" name="fecha" id="fecha">
+        <br>
+        <br>
+        <label for="fecha_hora">Fecha y Hora</label>
+        <!--datetime-local — Este valor genera un campo de entrada para insertar fecha y hora.-->
+        <input type="datetime-local" name="fecha_hora" id="fecha_hora">
+        <br>
+        <br>
+        <label for="hora">Hora</label>
+        <!--time — Este valor genera un campo de entrada para insertar una hora (horas y minutos).-->
+        <input type="time" name="hora" id="hora">
+        <br>
+        <br>
+        <label for="mes">Mes y Año</label>
+        <!--month — Este valor genera un campo de entrada para insertar el número del mes.-->
+        <input type="month" name="mes" id="mes">
+        <br>
+        <br>
+        <label for="semana">Semana y Año</label>
+        <!--week—Este valor genera un campo de entrada para insertar el número de la semana (dentro del año).-->
+        <input type="week" name="semana" id="semana">
+        <br>
+        <br>
+
+        <h3>Seleccionadores</h3>
+        <h4>Checkbox</h4>
+        <label for="check1">Opción 1</label>
+        <!--checkbox — Este valor genera una casilla de control que permite al usuario activar o desactivar una opción. -->
+        <input type="checkbox" name="check1" id="check1">
+        <br>
+        <label for="check2">Opción 2</label>
+        <input type="checkbox" name="check2" id="check2">
+        <br>
+        <label for="check3">Opción 3</label>
+        <input type="checkbox" name="check3" id="check3">
+        <br>
+        <br>
+        <label for="radio1">Opción 1</label>
+        <!--
+        radio — Este valor genera un botón de opción para seleccionar 
+                una opción de varias posibles.
+        -->
+        <input type="radio" name="radio1" id="radio1">
+        <br>
+        <label for="radio2">Opción 2</label>
+        <input type="radio" name="radio2" id="radio2">
+        <br>
+        <label for="radio3">Opción 3</label>
+        <input type="radio" name="radio3" id="radio3">
+        <br>
+        <br>
+
+        <h3>Entrada de varios elementos</h3>
+        <h4>Archivo</h4>
+        <label for="archivo">Archivo</label>
+        <!--file — Este valor genera un campo de entrada para seleccionar un archivo en el ordenador del usuario.-->
+        <input type="file" name="archivo" id="archivo">
+        <br>
+        <h4>URL</h4>
+        <label for="link">Enlace</label>
+        <!--url — Este valor genera un campo de entrada para insertar URL.-->
+        <input type="url" name="link" id="link">
+        <br>
+        <h4>Color</h4>
+        <label for="color">Color</label>
+        <!--color — Este valor genera un campo de entrada para insertar un color.-->
+        <input type="color" name="color" id="color">
+        <br>
+        <h4>Búsqueda</h4>
+        <label for="busqueda">Búsqueda</label>
+        <!--search — Este valor genera un campo de entrada para insertar términos de búsqueda.-->
+        <input type="search" name="busqueda" id="busqueda">
+        <br>
+        <h4>Rango</h4>
+        <label for="rango">Rango</label>
+        <!--range — Este valor genera un campo de entrada para insertar un rango de números.-->
+        <input type="range" name="rango" id="rango">
+        <br>
+        <br>
+        
+        <h3>Botones</h3>
+        <!--
+        button — Este valor genera un botón. El botón trabaja como el elemento <button> de tipo button. 
+                No realiza ninguna acción por defecto; la acción debe ser definida desde JavaScript.
+        -->
+        <input type="button" value="Botón">
+        <!--reset — Este valor genera un botón para reiniciar el formulario.-->
+        <input type="reset" value="Reset">
+        <!--submit — Este valor genera un botón para enviar el formulario.-->
+        <input type="submit" value="Enviar">
+        <br>
+        <br>
+        <!--
+        image — Este valor carga una imagen que se usa como botón para enviar el formulario. 
+                Un elemento <input> de este tipo debe incluir el atributo src para especificar 
+                la URL de la imagen.
+        -->
+        <input type="image" src="img/flecha_boton02.png" alt="Enviar" width="50" height="50">
+        <br>
+        <br>
+        <!--
+        <button> —  Este elemento crea un botón. 
+                    Incluye el atributo type para definir el propósito del botón. 
+                    Los valores disponibles son: 
+                    
+                    + submit para enviar el formulario (por defecto). 
+                    + reset para reiniciar el formulario.
+                    + button para realizar tareas personalizadas.
+        -->
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

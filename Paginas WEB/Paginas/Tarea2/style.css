@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Para editar la barrrita de navegacion de una pagina se ocupan los siguientes argumentos 
+::-webkit-scrollbar y ::-webkit-scrollbar-thumb*/
+::-webkit-scrollbar {
+    color: brown;
+    width: 10px;
+    /* Ancho del scrollbar vertical */
+    height: 3px;
+    /* Altura del scrollbar horizontal */
+}
+::-webkit-scrollbar-thumb {
+    background: #5f1616;
+    /* Color de la parte que se desplaza */
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+#nav ul {
+    display: flex;
+    /* Usar flexbox para disposición horizontal */
+    justify-content: end;
+}
+
+/* Estilo para los elementos de la lista */
+#nav li {
+    color: darkslategrey;
+    margin-right: 20px;
+    /* Espacio entre los elementos */
+}
+
+#div {
+    background-image: url(https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero.jpg);
+    height: 335px;
+}
+
+.vector{
+    width: 50px;
+    height: 50px;
+    margin: 3rem 0 0 3rem;
+}
+
+.aprende{
+    margin: -5.5rem 5rem 5rem 6rem ;
+    font-size: 35px;
+}
+
+.enlas{
+    margin: -5.5rem 2rem 2rem 11.5rem ;
+    font-size: 23px;
+}
+
+.escuelas{
+    margin: -5rem 10rem 10rem 17rem ;
+    font-size: 45px;
+}
+
+.decodigo{
+    margin: -10.8rem -1rem 1rem 17rem ;
+    font-size: 45px;
+}
+
+.cdmx{
+    margin: -3.5rem 1rem 1rem 17rem ;
+    font-size: 23px;
+}
+
+.B {
+    font-family: "Anton", sans-serif;
+    font-weight: 50px;
+    font-style: normal;
+}
+
+#imagen1 {
+    width: 1210px;
+}
+
+#imagen2 {
+    width: 50px;
+    margin-right: -500px;
+
+}
+
+#h1 {
+    text-align: center;
+    color: peru;
+}
+
+#p {
+    text-align: center;
+    color: darkslategrey;
+}
+
+#p2 {
+    text-align: center;
+}
+
+#div p,
+h1 {
+    color: aliceblue;
+}
+/*margin es la unica que puede usar numeros negativos
+  padding no usa negativos
+  font-weight es para poner negrita el texto en css porque si uso b o strong en html es para indicar al motor de busqueda que eso es importante
+  font-size es para el tamaño de la letra
+*/
+.ul li a {
+    color: darkslategray; /* Cambia 'blue' por el color que prefieras para los enlaces */
+}

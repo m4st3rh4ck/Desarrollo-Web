@@ -1,0 +1,39 @@
+/*Con eso se pone comentarios en css*/
+/*Estilo para los titulos*/
+h1 {
+    color: brown;
+}
+
+h2 {
+    color: chocolate;
+}
+
+h3,
+h3,
+h4,
+h5,
+h6 {
+    color: blueviolet;
+}
+
+/*Estilo para los parrafos*/
+p {
+    color: darkgreen;
+    background-color: cornflowerblue;
+    /*background es para poner color de fondo*/
+}
+
+/*Selector de class*/
+.parrafo1{
+    color:darkred;
+}
+
+/*Selector de id*/
+#p123{
+    color: darkmagenta;
+background-color: chartreuse;;
+}
+#p456{
+    color: tomato;
+    background-color: violet;
+}

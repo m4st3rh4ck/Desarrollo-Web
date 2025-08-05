@@ -1,0 +1,250 @@
+.divnav {
+    background-color: #d8b78c;
+    padding: .002%;
+}
+
+#nav1 ul {
+    display: flex;
+    /* Usar flexbox para disposición horizontal */
+    justify-content: center;
+}
+
+/* Estilo para los elementos de la lista */
+#nav1 li {
+    color: blanchedalmond;
+    margin-right: 20px;
+    /* Espacio entre los elementos */
+}
+
+.imgportada {
+    width: 1333px;
+    height: 350px;
+}
+
+.footer {
+    background-color: #d8b78c;
+}
+
+.txt1portada {
+    margin: -20rem 5rem -5rem 17rem;
+    color: aliceblue;
+    font-size: 50px;
+}
+
+.txt2portada {
+    margin: 5rem -50rem -2rem 35rem;
+    color: aliceblue;
+    font-size: 50px;
+}
+
+.txt3portada {
+    margin: 5rem 5rem -5rem 27rem;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+/*margin: subir o bajar,empuja a la izquierda*/
+/*margin: subir o bajar,*/
+.libro1 {
+    height: 300px;
+    width: 200px;
+}
+
+.libro2 {
+    height: 300px;
+    width: 200px;
+}
+
+.libro3 {
+    height: 300px;
+    width: 200px;
+}
+
+.libro4 {
+    height: 300px;
+    width: 200px;
+}
+
+.libro5 {
+    height: 300px;
+    width: 200px;
+}
+
+.libro6 {
+    height: 300px;
+    width: 200px;
+}
+
+.libro7 {
+    height: 300px;
+    width: 200px;
+}
+
+.libro8 {
+    height: 300px;
+    width: 200px;
+}
+
+.libro9 {
+    height: 300px;
+    width: 200px;
+}
+
+.libro10 {
+    height: 300px;
+    width: 200px;
+}
+
+.libro11 {
+    height: 300px;
+    width: 200px;
+}
+
+.libro_1 {
+    margin: 2rem 1rem 1rem 1rem;
+}
+
+.libro_2 {
+    margin: -22rem 1rem 1rem 18rem;
+}
+
+.libro_3 {
+    margin: -22.1rem 1rem 1rem 35rem;
+}
+
+.libro_4 {
+    margin: -22.1rem 1rem 1rem 52rem;
+}
+
+.libro5 {
+    margin: -10rem 10rem 1rem 1rem;
+}
+
+.libro6 {
+    margin: -10rem 1rem 1rem -6.5rem;
+}
+
+.libro7 {
+    margin: -10rem 1rem 1rem -10rem;
+}
+
+.libro8 {
+    margin: -10rem 1rem 1rem -13rem;
+}
+
+.libro9 {
+    margin: -10rem 1rem 1rem -16rem;
+}
+
+.libro10 {
+    margin: -10rem 1rem 1rem -19rem;
+}
+
+.libro11 {
+    margin: -10rem 1rem 1rem -22rem;
+}
+
+.recomendaciones {
+    margin: 15rem 1rem 1rem -7rem;
+    color: maroon;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.section2 {
+    margin: 15rem 1rem 1rem 10rem;
+}
+
+.busbook {
+    max-height: 500px;
+    display: flex;
+    overflow-x: auto;
+}
+
+.busbook .libro {
+    min-width: 300px;
+    height: 1000px;
+    line-height: 700px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.897);
+}
+
+.recolib {
+    color: maroon;
+    font-size: 25px;
+    margin: 15rem 1rem 1rem -7rem;
+    font-weight: bold;
+}
+
+.conocenos {
+    color: maroon;
+    font-size: 25px;
+    margin: 1rem 1rem 1rem 1rem;
+    font-weight: bold;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: right;
+    width: 50%;
+}
+
+.imagenn {
+    width: 600px;
+    height: 400px;
+    margin: 1rem -20rem 5rem 20rem;
+}
+
+.imgconocenos {
+    width: 50%;
+    margin: -20rem -20rem 5rem 23rem;
+}
+
+.Conocenos {
+    width: 40%;
+    margin: 10rem 20rem 5rem 10rem;
+}
+
+.section3 {
+    display: inline;
+    width: 100%;
+}
+
+.h2 {
+    color: maroon;
+}
+
+.txxt {
+    margin: 4rem 3rem 5rem 0.05rem;
+}
+
+.meetingus {
+    margin: 10rem 5rem 3rem 10rem;
+}
+
+.h4 {
+    color: maroon;
+}
+
+.h {
+    justify-content: center;
+    margin: 1rem 5rem 3rem 11rem;
+}
+.footer{
+    display: flex;
+}
+.eltunel{
+    width: 32%;
+    color: aliceblue;
+}
+.informacion{
+    width: 32%;
+    color: aliceblue;
+}
+.suscribete{
+    width: 32%;
+    color: aliceblue;
+}
+.erav{
+justify-content: right;
+}

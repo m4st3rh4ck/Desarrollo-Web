@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semántica</title>
+    <style>
+        header{
+            border: 2px solid red;
+            margin: 5px;
+        }
+        nav{
+            border: 2px solid blue;
+            margin: 5px;
+        }
+        main{
+            border: 2px solid purple;
+            margin: 5px;
+        }
+        section{
+            border: 2px solid aqua;
+            margin: 5px;
+        }
+        article{
+            border: 2px solid orchid;
+            margin: 5px;
+        }
+        aside{
+            border: 2px solid green;
+            margin: 5px;
+        }
+        footer{
+            border: 2px solid orangered;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!--
+        La etiqueta <header> en HTML se utiliza para mostrar el encabezado de una página web. 
+        Es una de las primeras cosas que verá el usuario al aterrizar en tu sitio web y 
+        proporciona información esencial sobre el contenido de la página.
+
+        La etiqueta <header> puede contener títulos (<h1> - <h6>), una barra de búsqueda,
+        una barra de navegación y el logo de la página.
+        -->
+        <h1>Este es el encabezado</h1>
+        <nav>
+            <!--
+            La etiqueta <nav> en HTML se utiliza para definir una sección de navegación en un documento web. 
+            Esta sección de navegación generalmente contiene enlaces o menús que permiten a los usuarios 
+            desplazarse o acceder a diferentes partes del sitio web o a otras páginas relacionadas.
+
+            Por lo general la etiqueta <nav> contiene una lista no ordenada de enlaces que podrían representar un menú de navegación.
+            -->
+            <h3>Esta es la barra de navegación</h3>
+            <ul>
+                <li>Enlace</li>
+                <li>Enlace</li>
+                <li>Enlace</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--
+        La etiqueta <main> en HTML representa el contenido principal del <body> de un documento o aplicación. 
+        Esta área principal del contenido consiste en la información directamente relacionada con el tema 
+        central del documento o la funcionalidad central de una aplicación.
+        Es importante destacar que solo se puede usar una vez por página, y no debe estar anidado dentro de 
+        elementos como <article>, <aside>, <footer>, <header> o <nav>
+        -->
+        <h2>Esta es la parte principal</h2>
+        <section>
+            <!--
+            La etiqueta <section> en HTML representa una sección genérica de un documento. 
+            Su propósito es determinar qué contenido corresponde a qué parte de un esquema.
+            Es importante destacar que cada <section> debe identificarse, generalmente 
+            incluyendo un encabezado (un elemento <h1> - <h6>) como hijo del elemento <section>, 
+            siempre que sea posible. Esto es útil para los lectores y también beneficia al SEO.
+            -->
+            <h4>Esta es una sección</h4>
+        </section>
+        <section>
+            <h4>Esta es una sección</h4>
+        </section>
+        <article>
+            <!--
+            La etiqueta <article> en HTML representa una composición auto-contenida en un documento, página web, aplicación o sitio. 
+            Su propósito es crear contenido que sea distribuible y reutilizable de manera independiente.
+            Puedes tener varios <article> en un mismo documento.
+
+            Algunos ejemplos de uso incluyen:
+
+                + Un mensaje en un foro.
+                + Un artículo de una revista o periódico.
+                + Una entrada de blog.
+                + El comentario de un usuario.
+                + Un widget o gadget interactivo.
+
+            Recuerda que cada <article> debe ser identificado, generalmente con un elemento de encabezado (como <h1> - <h6>) como hijo.
+            -->
+            <h4>Esta es un articulo</h4>
+        </article>
+        <aside>
+            <!--
+            La etiqueta <aside> en HTML se utiliza para representar una sección de una página que contiene información 
+            relacionada con el contenido principal, pero que se puede separar de este contenido sin afectar su comprensión. 
+            En otras palabras, es ideal para contenido secundario o complementario.
+
+            Por ejemplo, puedes usar <aside> para:
+
+                + Artículos relacionados: Si tienes un artículo principal en tu página, 
+                puedes incluir un <aside> con enlaces a otros artículos relacionados.
+                + Notas al margen: Puedes usarlo para mostrar notas adicionales o 
+                aclaraciones junto al contenido principal.
+                + Publicidad: Si deseas incluir anuncios o promociones, el <aside> es una buena elección.
+                + Biografía del autor: Si estás escribiendo sobre un autor o creador, 
+                puedes colocar su biografía en un <aside>.
+            
+            Recuerda que la principal diferencia entre <aside> y un <div> normal es su significado semántico. 
+            El uso de <aside> proporciona información adicional, especialmente para motores de búsqueda.
+            -->
+            <h4>Esta es la barra lateral</h4>
+        </aside>
+    </main>
+    <footer>
+        <!--
+        La etiqueta <footer> en HTML se utiliza para representar el pie de página de una página web. 
+        Es una sección que generalmente contiene información complementaria, como derechos de autor, 
+        enlaces a políticas legales, enlaces de contacto y enlaces a redes sociales1.
+
+        El <footer> es la sección inferior de una página web que contiene información adicional y enlaces relevantes.
+
+        Uso común:
+            + Derechos de autor: El pie de página suele incluir información sobre derechos de autor.
+            + Enlaces legales: Puedes agregar enlaces a políticas de privacidad, términos de uso y otros documentos legales.
+            + Enlaces de contacto: Si deseas proporcionar información de contacto, el pie de página es un buen lugar para ello.
+            + Enlaces a redes sociales: Puedes incluir íconos o enlaces a tus perfiles en redes sociales.
+
+        Recuerda que el <footer> no debe ser un descendiente de los elementos <address>, <header> ni de otro elemento <footer>.
+        -->
+        <h2>Este es el pie de página</h2>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div - Span</title>
+    <style>
+        div{
+            border: 2px solid blue;
+            padding: 10px;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div><p>Este es un contenedor</p></div>
+        <div>
+            <div><p>Este es un contenedor</p></div>
+            <div><p>Este es un contenedor</p></div>
+        </div>
+    </div>
+    <div>
+        <!-- <span>
+        La etiqueta <span> en HTML es un elemento contenedor en línea. 
+
+            + Definición: El <span> se utiliza para aplicar estilo al texto o agrupar elementos en línea. 
+            A diferencia de otras etiquetas como <div>, el <span> no afecta la estructura del documento, 
+            sino que se enfoca en pequeños fragmentos de texto.
+            + Estilo y formato: Puedes usar <span> para aplicar estilos CSS a partes específicas de tu contenido. 
+            Por ejemplo, cambiar el color, la fuente o el fondo de un texto.
+        -->
+        <p>Este es un <span>párrafo</span></p>
+        <p>Este es otro <span>párrafo</span></p>
+    </div>
+    <!-- Diferencia entre <div> y <span>:
+    Ambos agrupan elementos, pero el <div> es un contenedor de bloque (ocupa todo el ancho disponible), 
+    mientras que el <span> es un contenedor en línea (no afecta al diseño de bloques).
+    El <div> se usa para agrupar secciones completas, mientras que el <span> se utiliza 
+        para aplicar estilos a partes específicas de un texto.
+    -->
+</body>
+</html>

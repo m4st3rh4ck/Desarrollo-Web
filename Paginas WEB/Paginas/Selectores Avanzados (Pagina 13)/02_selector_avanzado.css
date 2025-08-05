@@ -1,0 +1,19 @@
+/*CTRL + clikizquierdo = se crea atomaticamente el documento .css*/
+body{
+    background-color: aqua;
+}
+main{
+    background-color: dodgerblue;
+}
+h1{
+    color:tomato;
+}
+p{
+   color:bisque;
+}
+main h1{
+    color: yellow;
+}
+main .parrafo{
+    color: brown;
+}

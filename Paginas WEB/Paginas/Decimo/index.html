@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    La etiqueta <meta> se encuentra en la sección <head> del documento HTML.
+    Proporciona información adicional sobre la página, pero no se muestra directamente al usuario.
+    Ayuda a los motores de búsqueda y navegadores a comprender y procesar el contenido.
+    -->
+    <!-- <meta charset="UTF-8">
+    Especifica la codificación de caracteres utilizada en un documento web.
+    Esta etiqueta debe ubicarse dentro de la sección <head> del documento HTML, justo después de la etiqueta de apertura <head>.
+    Indica al navegador que el texto dentro del sitio web está codificado en UTF-8.
+    El estándar UTF-8 es universalmente reconocido y admite una amplia gama de caracteres, incluidos idiomas y símbolos especiales.
+    -->
+    <meta charset="UTF-8">
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    Este elemento tiene el propósito importante de optimizar el despliegue de los sitios web, especialmente en dispositivos móviles.
+
+        + Ancho del dispositivo (width=device-width):
+        Define que el ancho del área visible de la página debe coincidir con el ancho del dispositivo (como el teléfono móvil o la tableta).
+        Esto asegura que el contenido se ajuste correctamente a la pantalla sin desbordamientos ni recortes.
+
+        + Escala inicial (initial-scale=1.0):
+        Establece la escala inicial de la página al 100%.
+        Evita que la página se muestre ampliada o reducida al cargarla en un dispositivo.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <meta name="keywords" content="....">
+    Se refiere a una etiqueta HTML que suele utilizarse para indicar palabras clave relevantes en una página web.
+    Las keywords son palabras clave que se incorporan en el código HTML de una página web para indicar a los buscadores sobre el contenido relevante que ofrece dicho sitio.
+    -->
+    <meta name="keywords" content="Metadatos, HTML, Elementos, Etiquetas">
+
+    <!-- <title>
+    Define el título del documento que se muestra en la barra de título del navegador o en la pestaña de una página web.
+    El elemento <title> contiene solo texto y se coloca dentro del bloque <head> de una página. 
+    Su contenido es lo que aparece en la parte superior de la ventana del navegador o en la pestaña cuando un usuario visita tu sitio web.
+    -->
+    <title>Metadatos</title>
+
+    <!-- <style>
+    Es un elemento fundamental que se utiliza para incluir estilos CSS (Cascading Style Sheets) directamente dentro de un documento HTML.
+
+        + Función principal: La etiqueta <style> permite definir estilos para una página web. 
+        Estos estilos afectan aspectos como el color, tamaño, fuente, alineación del texto y diseño de los elementos en la página.
+        + Ubicación: Debe colocarse dentro del elemento <head> del documento HTML, aunque algunos navegadores 
+        también admiten su uso en el cuerpo del documento. Sin embargo, es recomendable colocarla en la sección <head> para garantizar la 
+        compatibilidad y seguir las buenas prácticas.
+    -->
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+    </style>
+
+    <!-- <link>
+    Se utiliza para establecer relaciones con otros documentos, enlaces o archivos. 
+    Su función principal es definir un marco relacional para la navegación y enlazar recursos externos con el documento actual.
+
+        + Relación con estilos CSS: El uso más común de <link> es para enlazar hojas de estilos externas (archivos .css). 
+        Al hacerlo, indicamos al navegador que aplique los estilos definidos en ese archivo al documento HTML actual.
+
+        + Otros atributos de rel: Además de estilos, existen otros tipos de relaciones que podemos establecer con <link>:
+
+            + icon: Indica un icono para usar como favicon (el ícono de la pestaña del navegador).
+            + alternate: Señala una versión alternativa del documento actual.
+            + canonical: Establece el enlace real para evitar URL duplicadas en términos de SEO.
+            + prev y next: Indican si hay URLs anteriores o siguientes al documento actual (útil en enlaces con varias partes).
+    -->
+    <link rel="icon" href="img/favicon-16x16.png" type="image/png" sizes="16x16">
+</head>
+<body>
+    <h1>Metadatos</h1>
+</body>
+</html>
